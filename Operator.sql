@@ -146,7 +146,7 @@ WHERE transaction_date >= '2024-07-15' XOR transaction_type = '판매';
 
 -- LIKE 연산자 : 문자열을 패턴을 기준으로 비교하고자 할 때 사용
 -- % : 임의의 개수(0 ~ 무한대)의 문자 표현
--- % : 임의의 한 개 문자 표현
+-- _ : 임의의 한 개 문자 표현
 SELECT * FROM transaction
 WHERE transaction_date LIKE '2024-07-%';
 
